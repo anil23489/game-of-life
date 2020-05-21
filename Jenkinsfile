@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage ("Maven Build"){
             steps{
-                git url: https://github.com/anil23489/game-of-life.git
+                git url: 'https://github.com/shivakumarmanne/game-of-life.git'
                 bat '''
                 mvn clean install
                 '''
