@@ -10,9 +10,4 @@ pipeline{
             }
         }
     }
-    post{
-        success{
-            archiveArtifacts 'gameoflife-web/target/*.war'
-        }
-    }
 }
