@@ -4,9 +4,9 @@ pipeline{
         stage ("Maven Build"){
             steps{
                 git url: 'https://github.com/shivakumarmanne/game-of-life.git'
-                bat '''
+                bat """
                 mvn clean install
-                '''
+                """
             }
         }
     }
